@@ -1,16 +1,19 @@
+import { ModeToggle } from "@/components/theme";
 import { navbarLinks } from "@/constant";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export const Navbar = () => {
   return (
     <header className="px-5">
       <nav className="flex items-center justify-between py-2 font-medium">
         <div className="text-3xl font-bold">
-          <h1>
-            Sky<span>Cast</span>
-          </h1>
+          <Link to="/">
+            <h1>
+              Sky<span>Cast</span>
+            </h1>
+          </Link>
         </div>
-        <ul className="flex items-center justify-between gap-5">
+        <ul className="flex items-center justify-between gap-5 font-bold">
           {navbarLinks.map((link) => (
             <li key={link.title}>
               <NavLink
@@ -24,6 +27,7 @@ export const Navbar = () => {
               </NavLink>
             </li>
           ))}
+          <ModeToggle />
         </ul>
       </nav>
     </header>
