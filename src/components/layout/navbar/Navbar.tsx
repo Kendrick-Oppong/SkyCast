@@ -1,5 +1,7 @@
+import { MobileNav } from "@/components/sheet";
 import { ModeToggle } from "@/components/theme";
 import { navbarLinks } from "@/constant";
+import { Menu } from "lucide-react";
 import { Link, NavLink } from "react-router-dom";
 
 export const Navbar = () => {
@@ -15,11 +17,15 @@ export const Navbar = () => {
         </div>
         <ul className="flex items-center justify-between gap-5 font-bold">
           {navbarLinks.map((link) => (
-            <li key={link.title}>
+            <li key={link.title} className="hidden md:inline-flex">
               <NavLink
                 to={link.href}
                 className={({ isActive, isPending }) =>
-                  isPending ? "" : isActive ? "rounded-sm text-primary" : ""
+                  isPending
+                    ? ""
+                    : isActive
+                    ? "rounded-sm bg-primary p-1 px-2"
+                    : "hover:text-primary"
                 }
                 end
               >
@@ -28,6 +34,14 @@ export const Navbar = () => {
             </li>
           ))}
           <ModeToggle />
+          <div className="flex items-center md:hidden">
+            <MobileNav>
+              <Menu
+                size={27}
+                className="shadow-lg cursor-pointer hover:text-primary"
+              />
+            </MobileNav>
+          </div>
         </ul>
       </nav>
     </header>
