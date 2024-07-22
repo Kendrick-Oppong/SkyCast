@@ -5,7 +5,7 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 import { navbarLinks } from "@/constant";
-import { Link, NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const MobileNav = ({ children }: { children: React.ReactNode }) => {
   return (
