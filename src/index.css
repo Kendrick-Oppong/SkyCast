@@ -80,6 +80,10 @@
     @apply text-lg bg-background text-foreground min-h-dvh;
   }
 
+  li {
+    @apply list-none;
+  }
+
   span {
     @apply text-primary;
   }
