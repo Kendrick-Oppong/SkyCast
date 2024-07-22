@@ -1,5 +1,4 @@
 import { Disc } from "lucide-react";
-import { Link } from "react-router-dom";
 
 export const AboutPage = () => {
   return (
