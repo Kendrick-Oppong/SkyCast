@@ -47,15 +47,11 @@ export const AboutPage = () => {
             </h2>
             <ul className="mb-6 space-y-3 [&>li]:flex [&>li]:items-center [&>li]:gap-3">
               <li>
-                <Disc className="text-primary" /> Real-time weather updates
-              </li>
-              <li>
                 <Disc className="text-primary" /> Detailed temperature and
                 precipitation forecasts
               </li>
               <li>
-                <Disc className="text-primary" /> Weather alerts and
-                notifications
+                <Disc className="text-primary" /> Weather alerts
               </li>
               <li>
                 <Disc className="text-primary" /> User-friendly interface

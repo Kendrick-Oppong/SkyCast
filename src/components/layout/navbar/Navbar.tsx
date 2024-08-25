@@ -24,7 +24,7 @@ export const Navbar = () => {
                   isPending
                     ? ""
                     : isActive
-                    ? "rounded-sm bg-primary p-1 px-2"
+                    ? "rounded-sm bg-primary text-white p-1 px-2"
                     : "hover:text-primary"
                 }
                 end
