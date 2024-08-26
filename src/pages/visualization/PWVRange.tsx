@@ -14,7 +14,7 @@ export const PWVRange = () => {
 
   return (
     <Tabs defaultValue="daily" className="my-10 text-center">
-      <TabsList className="mx-auto border border-rose-700">
+      <TabsList className="mx-auto border border-primary">
         <TabsTrigger value="daily">Daily</TabsTrigger>
         <TabsTrigger value="weekly">Weekly</TabsTrigger>
         <TabsTrigger value="monthly">Monthly</TabsTrigger>
@@ -90,8 +90,8 @@ export const PWVRange = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious />
-          <CarouselNext />
+          <CarouselPrevious/>
+          <CarouselNext/>
         </Carousel>
       </TabsContent>
     </Tabs>
