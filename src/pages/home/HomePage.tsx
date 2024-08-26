@@ -68,7 +68,7 @@ export const HomePage = () => {
                 </p>
               </div>
               <div className="flex justify-center gap-4 my-6 text-xl font-semibold divide-x-2 divide-black">
-                <p>{weather?.current.wind_mph || "2.7"}</p>
+                <p>{weather?.current.wind_mph || "2.7"} m/h</p>
                 <p className="pl-3">Windy</p>
               </div>
               <div className="flex justify-center gap-4 my-6 text-xl font-semibold divide-x-2 divide-black">
