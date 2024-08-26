@@ -1,8 +1,11 @@
 import { ButtonLink } from "@/components/button";
 import { Circle, Sun } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
+import { useFetchWeatherData } from "@/hooks/useFetch";
 
 export const HomePage = () => {
+  const { data } = useFetchWeatherData();
+  console.log(data);
   return (
     <div className="min-h-dvh">
       <section className="bg-[url('/hero-bg.png')] dark:bg-[url('/hero-bg-2.png')] grid grid-cols-1 md:grid-cols-2 gap-5 py-24 px-5 md:px-10 min-h-dvh bg-cover bg-no-repeat">
