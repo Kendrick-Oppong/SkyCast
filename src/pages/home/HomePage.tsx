@@ -25,10 +25,10 @@ export const HomePage = () => {
         <div className="self-center mt-10 md:mt-0">
           <div className="md:max-w-[80%] bg-hero-linear-gradient shadow-xl rounded-xl py-10 px-5">
             <div className="flex items-center justify-between">
-              <p className="text-2xl font-bold ">Kumasi</p>
+              <p className="text-2xl font-bold dark:text-primary">Kumasi</p>
               <Sun className="text-primary animate-spin-slow" size={90} />
             </div>
-            <p className="text-3xl font-bold text-center">
+            <p className="text-3xl font-bold text-center dark:text-primary">
               Today,{" "}
               {new Date().toLocaleString("en-US", {
                 day: "2-digit",

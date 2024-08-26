@@ -53,7 +53,7 @@ export function DailyVisualizationPage() {
         <Badge className="px-3 py-2">November 2023 - June 2024 (Daily)</Badge>
       </div>
       <section className="px-4">
-        <Card>
+        <Card className="border border-primary">
           <CardHeader className="text-center">
             <CardTitle>Time Series - ZTD and PWV</CardTitle>
             <CardDescription>

@@ -82,7 +82,7 @@ export function WeeklyVisualizationPage() {
         </Badge>
       </div>
       <section className="px-4">
-        <Card>
+        <Card className="border border-primary">
           <CardHeader className="text-center">
             <CardTitle>Time Series - ZTD and PWV</CardTitle>
             <CardDescription>
