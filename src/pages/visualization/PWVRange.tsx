@@ -90,8 +90,10 @@ export const PWVRange = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-          <CarouselPrevious/>
-          <CarouselNext/>
+          <div className="relative bottom-0">
+            <CarouselPrevious />
+            <CarouselNext />
+          </div>
         </Carousel>
       </TabsContent>
     </Tabs>
