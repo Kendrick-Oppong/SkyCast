@@ -11,7 +11,7 @@ export const Navbar = () => {
         <div className="text-3xl font-bold">
           <Link to="/">
             <h1>
-              Sky<span>Cast</span>
+              Weather<span>Lens</span>
             </h1>
           </Link>
         </div>
